@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.weather-app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 200px 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 1 / -1;
+  background-color: #4d72be;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 5px solid rgb(28, 27, 27);
+}
+
+.get-weather-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.city-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.city-list th {
+  background-color: #4d72be;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #131212;
+}
+
+.city-list tbody tr {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.city-list tbody tr:hover {
+  background-color: #4d72be; /* Highlight row on hover */
+}
+
+.city-list tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #1c1b1b;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.weather-table th,
+.weather-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.no-data {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 4px;
+}
+.delete-button:hover {
+  background-color: darkred;
+}
